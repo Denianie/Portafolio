@@ -49,7 +49,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
+    // <div className={`relative ${data.showCursor && "cursor-none"}`}>
+    <div className={`relative ${data.showCursor && ""}`}>
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
