@@ -12,7 +12,10 @@ import Link from "next/link";
 import Cursor from "../components/Cursor";
 
 // Local Data
-import data from "../data/portfolio.json";
+// import data from "../data/portfolio.json";
+
+import { useLanguage } from "../utils/languageContext"; // Importar el contexto de idioma
+
 
 export default function Home() {
   // Ref
@@ -22,6 +25,9 @@ export default function Home() {
   const textTwo = useRef();
   const textThree = useRef();
   const textFour = useRef();
+
+  // Usar el contexto de idioma
+  const { portfolioData } = useLanguage(); // Extraer los datos dinámicos del idioma
 
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -50,10 +56,13 @@ export default function Home() {
 
   return (
     // <div className={`relative ${data.showCursor && "cursor-none"}`}>
-    <div className={`relative ${data.showCursor && ""}`}>
-      {data.showCursor && <Cursor />}
+    // <div className={`relative ${data.showCursor && ""}`}>
+    <div className={`relative ${portfolioData.showCursor && ""}`}>
+      {/* {data.showCursor && <Cursor />} */}
+      {portfolioData.showCursor && <Cursor />}
       <Head>
-        <title>{data.name}</title>
+        {/* <title>{data.name}</title> */}
+        <title>{portfolioData.name}</title>
       </Head>
 
       <div className="gradient-circle"></div>
@@ -70,35 +79,43 @@ export default function Home() {
               ref={textOne}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
-              {data.headerTaglineOne}
+              {/* {data.headerTaglineOne} */}
+              {portfolioData.headerTaglineOne}
             </h1>
             <h1
               ref={textTwo}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
-              {data.headerTaglineTwo}
+              {/* {data.headerTaglineTwo} */}
+              {portfolioData.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
-              {data.headerTaglineThree}
+              {/* {data.headerTaglineThree} */}
+              {portfolioData.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
-              {data.headerTaglineFour}
+              {/* {data.headerTaglineFour} */}
+              {portfolioData.headerTaglineFour}
             </h1>
           </div>
 
           <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+          <h1 className="text-2xl text-bold">
+            {/* Work. */}
+            {portfolioData.home.work}
+          </h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
+            {/* {data.projects.map((project) => ( */}
+            {portfolioData.projects.map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
@@ -111,9 +128,13 @@ export default function Home() {
         </div>
 
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+          <h1 className="tablet:m-10 text-2xl text-bold">
+            {/* Services. */}
+            {portfolioData.home.services}
+          </h1>
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
-            {data.services.map((service, index) => (
+            {/* {data.services.map((service, index) => ( */}
+            {portfolioData.services.map((service, index) => (
               <ServiceCard
                 key={index}
                 name={service.title}
@@ -126,14 +147,20 @@ export default function Home() {
         {process.env.NODE_ENV === "development" && (
           <div className="fixed bottom-5 right-5">
             <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
+              <Button type="primary">
+                {portfolioData.home.edit}
+              </Button>
             </Link>
           </div>
         )}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
+          <h1 className="tablet:m-10 text-2xl text-bold">
+            {/* About. */}
+            {portfolioData.home.about}
+          </h1>
           <div className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara.map((paragraph, index) => (
+            {/* {data.aboutpara.map((paragraph, index) => ( */}
+            {portfolioData.aboutpara.map((paragraph, index) => (
               <p key={index} className="mb-4">{paragraph}</p>
             ))}
           </div>

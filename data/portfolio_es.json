@@ -36,6 +36,15 @@
         "blog": "Blog",
         "resume": "CV",
         "contact": "Contacto"
+    },
+    "home": {
+        "work": "Proyectos.",
+        "about": "Sobre mí.",
+        "blog": "Blog.",
+        "resume": "CV.",
+        "contact": "Contacto.",
+        "services": "Servicios.",
+        "edit":"Editar Datos"
     },  
     "projects": [
         {

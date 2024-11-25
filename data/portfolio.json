@@ -36,6 +36,15 @@
         "blog": "Blog",
         "resume": "Resume",
         "contact": "Contact"
+    },
+    "home": {
+        "work": "Work.",
+        "about": "About.",
+        "blog": "Blog.",
+        "resume": "Resume.",
+        "contact": "Contact.",
+        "services": "Services.",
+        "edit":"Edit Data"
     },  
     "projects": [
         {
