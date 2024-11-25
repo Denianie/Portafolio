@@ -1,10 +1,14 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
+import { LanguageProvider } from "../utils/languageContext";
 
-const App = ({ Component, pageProps }) => {
+
+const App = ({ Component, pageProps }) => { 
   return (
     <ThemeProvider>
-      <Component {...pageProps} />
+      <LanguageProvider>
+        <Component {...pageProps} />
+      </LanguageProvider>
     </ThemeProvider>
   );
 };

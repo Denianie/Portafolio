@@ -3,19 +3,43 @@ import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
-// Local Data
-import data from "../../data/portfolio.json";
+import { useLanguage } from "../../utils/languageContext";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
+  const { language, toggleLanguage, portfolioData } = useLanguage(); // Use the context
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume } = data;
+  const { name, menu, showBlog, showResume, darkMode } = portfolioData;
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const handleNavigation = (section) => {
+    // Set the section in the query params
+    if (router.pathname !== "/") {
+      router.push({ pathname: "/", query: { section } });
+    } else {
+      scrollToSection(section);
+    }
+  };
+  
+  const scrollToSection = (section) => {
+    if (section === "work" && handleWorkScroll) handleWorkScroll();
+    if (section === "about" && handleAboutScroll) handleAboutScroll();
+  };
+  
+  // Detect query param changes and scroll when on the homepage
+  useEffect(() => {
+    if (router.pathname === "/") {
+      const section = router.query.section;
+      if (section) {
+        scrollToSection(section);
+      }
+    }
+  }, [router.pathname, router.query]);
 
   return (
     <>
@@ -31,7 +55,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </h1>
 
               <div className="flex items-center">
-                {data.darkMode && (
+                <Button onClick={toggleLanguage}>
+                  {language === "en" ? "ES" : "EN"} {/* Toggle Button */}
+                </Button>
+                {darkMode && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
@@ -67,53 +94,27 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
-              {!isBlog ? (
-                <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Work</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
-                  {showResume && (
-                    <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
-                    >
-                      Resume
-                    </Button>
-                  )}
-
+              <div className="grid grid-cols-1">
+                <Button onClick={() => handleNavigation("work")}>{menu.work}</Button>
+                <Button onClick={() => handleNavigation("about")}>{menu.about}</Button>
+                {showBlog && (
+                  <Button onClick={() => router.push("/blog")}>{menu.blog}</Button>
+                )}
+                {showResume && (
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() =>
+                      router.push("/resume")
+                    }
                   >
-                    Contact
+                    {menu.resume}
                   </Button>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1">
-                  <Button onClick={() => router.push("/")} classes="first:ml-1">
-                    Home
-                  </Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
-                  {showResume && (
-                    <Button
-                      onClick={() => router.push("/resume")}
-                      classes="first:ml-1"
-                    >
-                      Resume
-                    </Button>
-                  )}
-
-                  <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
-                  >
-                    Contact
-                  </Button>
-                </div>
-              )}
+                )}
+                <Button
+                  onClick={() => window.open("mailto:denilumin@gmail.com")}
+                >
+                  {menu.contact}
+                </Button>
+              </div>
             </Popover.Panel>
           </>
         )}
@@ -129,67 +130,32 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         >
           {name}.
         </h1>
-        {!isBlog ? (
-          <div className="flex">
-            <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
-            {showResume && (
-              <Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
-              >
-                Resume
-              </Button>
-            )}
-
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
+        <div className="flex">
+          <Button onClick={() => handleNavigation("work")}>{menu.work}</Button>
+          <Button onClick={() => handleNavigation("about")}>{menu.about}</Button>
+          {showBlog && (
+            <Button onClick={() => router.push("/blog")}>{menu.blog}</Button>
+          )}
+          {showResume && (
+            <Button onClick={() => router.push("/resume")}>{menu.resume}</Button>
+          )}
+          <Button onClick={() => window.open("mailto:denilumin@gmail.com")}>
+            {menu.contact}
+          </Button>
+          <Button onClick={toggleLanguage}>
+            {language === "en" ? "ES" : "EN"} {/* Toggle Language */}
+          </Button>
+          {mounted && theme && darkMode && (
+            <Button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              <img
+                className="h-6"
+                src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
+              ></img>
             </Button>
-            {mounted && theme && data.darkMode && (
-              <Button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              >
-                <img
-                  className="h-6"
-                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
-              </Button>
-            )}
-          </div>
-        ) : (
-          <div className="flex">
-            <Button onClick={() => router.push("/")}>Home</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
-            {showResume && (
-              <Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
-              >
-                Resume
-              </Button>
-            )}
-
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
-            </Button>
-
-            {mounted && theme && data.darkMode && (
-              <Button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              >
-                <img
-                  className="h-6"
-                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
-              </Button>
-            )}
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </>
   );

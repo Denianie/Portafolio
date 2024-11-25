@@ -1,9 +1,9 @@
 {
     "name": "Denilson",
-    "headerTaglineOne": "Hello 👋",
-    "headerTaglineTwo": "I'm Denilson Ala - innovative",
-    "headerTaglineThree": "engineer and developer",
-    "headerTaglineFour": "based in Arequipa, Peru.",
+    "headerTaglineOne": "Hola 👋",
+    "headerTaglineTwo": "Soy Denilson Ala - ingeniero",
+    "headerTaglineThree": "innovador y developer",
+    "headerTaglineFour": "radicado en Arequipa, Perú.",
     "showCursor": true,
     "showBlog": true,
     "darkMode": true,
@@ -31,11 +31,11 @@
         }
     ],
     "menu": {
-        "work": "Work",
-        "about": "About",
+        "work": "Proyectos",
+        "about": "Sobre mí",
         "blog": "Blog",
-        "resume": "Resume",
-        "contact": "Contact"
+        "resume": "CV",
+        "contact": "Contacto"
     },  
     "projects": [
         {
@@ -84,48 +84,48 @@
     "services": [
         {
             "id": "1",
-            "title": "Data Analysis",
-            "description": "I transform raw data into actionable insights using Python, Power BI, and SQL to create intuitive dashboards and models for decision-making."
+            "title": "Análisis de Datos",
+            "description": "Transformo datos sin procesar en información útil utilizando Python, Power BI y SQL para crear dashboards y modelos intuitivos."
         },
         {
             "id": "2",
-            "title": "API Development",
-            "description": "I design and deploy APIs using Django and Node.js to enable seamless integrations and enhance functionality in web platforms."
+            "title": "Desarrollo de APIs",
+            "description": "Diseño e implemento APIs con Django y Node.js para facilitar integraciones y mejorar la funcionalidad en plataformas web."
         },
         {
             "id": "3",
-            "title": "Process Automation",
-            "description": "I automate workflows using Python, Excel VBA, and other tools to reduce manual tasks and improve efficiency in organizational processes."
+            "title": "Automatización de Procesos",
+            "description": "Automatizo flujos de trabajo con Python, Excel VBA y otras herramientas para reducir tareas manuales y mejorar la eficiencia."
         },
         {
             "id": "4",
             "title": "Machine Learning",
-            "description": "I design and implement machine learning solutions to optimize processes, improve decision-making, and solve real-world problems such as attendance tracking and data predictions."
+            "description": "Diseño e implemento soluciones de aprendizaje automático para optimizar procesos, mejorar decisiones y resolver problemas reales."
         }
     ],
     "aboutpara": [
-        "Hi, I’m Denilson Carlos Ala Samayani, a data and systems enthusiast who thrives on solving challenges through innovative solutions.",
-        "With a proven record in process automation, data analysis, and API development, my expertise lies in transforming raw data into actionable insights that drive decision-making.",
-        "From building responsive web platforms and deploying APIs in AWS to winning awards for machine learning projects, I bring both creativity and technical precision to the table. My passion for learning, teaching, and collaboration has allowed me to excel in cross-functional teams, delivering projects that impact organizations at scale.", 
-        "Let’s connect and make data work smarter!"
+        "Hola, soy Denilson Carlos Ala Samayani, un entusiasta de los datos y sistemas que disfruta resolver desafíos con soluciones innovadoras.",
+        "Con sólida experiencia en automatización de procesos, análisis de datos y desarrollo de APIs, me especializo en transformar datos en bruto en información útil para la toma de decisiones.",
+        "Desde construir plataformas web responsivas y desplegar APIs en AWS hasta ganar premios en proyectos de machine learning, aporto creatividad y precisión técnica. Mi pasión por aprender, enseñar y colaborar me ha permitido destacar en equipos multifuncionales, entregando proyectos con impacto organizacional a gran escala.", 
+        "¡Conectemos y hagamos que los datos trabajen de forma más inteligente!"
     ],
     "resume": {
-        "tagline": "👋 Hi, I’m Denilson Ala, a systems engineer focused on data and innovation.",
-        "description": "I enjoy creating impactful solutions by blending data analysis, API development, and process automation. With a practical approach, I optimize decision-making and streamline business processes.",
+        "tagline": "👋 Hola, soy Denilson Ala, ingeniero de sistemas enfocado en datos e innovación.",
+        "description": "Disfruto creando soluciones impactantes mediante el análisis de datos, desarrollo de APIs y automatización de procesos. Con un enfoque práctico, optimizo decisiones y simplifico procesos empresariales.",
         "experiences": [
             {
                 "id": "1",
-                "dates": "May 2024 - Present",
-                "type": "Full Time",
-                "position": "IT Assistant at Ontario Inmobiliaria",
-                "bullets": "Developed a responsive company website using React, Centralized real estate data into a PostgreSQL database, Designed and deployed scalable APIs with Django on AWS"
+                "dates": "Mayo 2024 - Presente",
+                "type": "Tiempo Completo",
+                "position": "Asistente de TI en Ontario Inmobiliaria",
+                "bullets": "Desarrollé un sitio web responsivo con React, Centralicé datos inmobiliarios en una base de datos PostgreSQL, Diseñé y desplegué APIs escalables con Django en AWS"
             },
             {
                 "id": "2",
-                "dates": "April 2023 - July 2023",
-                "type": "Internship",
-                "position": "People Analytics Intern at Sodimac & Maestro",
-                "bullets": "Automated HR processes with Excel VBA, Developed dashboards in Power BI, Identified employee turnover risks through advanced data modeling"
+                "dates": "Abril 2023 - Julio 2023",
+                "type": "Pasantía",
+                "position": "Practicante de People Analytics en Sodimac & Maestro",
+                "bullets": "Automaticé procesos de RR.HH. con Excel VBA, Desarrollé dashboards en Power BI, Identifiqué riesgos de rotación de empleados mediante modelamiento de datos avanzado"
             },
             {
                 "id": "3",
@@ -133,16 +133,16 @@
                 "type": "Internship",
                 "position": "IT Intern, Mas Ventas E.I.R.L.",
                 "bullets": [
-                    "Cleaned and migrated over 100,000 sales records", 
-                    "Collaborated with cross-functional teams to integrate data", 
-                    "Generated detailed sales reports in Power BI"
+                    "Limpié y migré más de 100,000 registros de ventas", 
+                    "Colaboré con equipos multifuncionales para integrar datos", 
+                    "Generé reportes detallados de ventas en Power BI"
                 ]
             }
         ],
         "education": {
             "universityName": "Universidad Católica de Santa María",
             "universityDate": "2019-2023",
-            "universityPara": "Graduated in Systems Engineering, specializing in data analysis and software development. Recognized among the top 10 in the class for a strong emphasis on practical and innovative problem-solving."
+            "universityPara": "Graduado en Ingeniería de Sistemas, con especialización en análisis de datos y desarrollo de software. Reconocido entre los mejores 10 de la clase por su enfoque en la aplicación práctica e innovadora para la resolución de problemas."
         },
         "languages": [
             "Python",
