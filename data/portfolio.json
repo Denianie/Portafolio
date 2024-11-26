@@ -45,6 +45,16 @@
         "contact": "Contact.",
         "services": "Services.",
         "edit":"Edit Data"
+    },
+    "footer": {
+        "contact": "Contact.",
+        "letsWork": "LET'S WORK",
+        "together": "TOGETHER",
+        "scheduleCall": "Schedule a call",
+        "madeWith": "Made With",
+        "by": "by",
+        "author": "Denilson Ala",
+        "linkedinUrl": "https://www.linkedin.com/in/denilson-ala-samayani/"
     },  
     "projects": [
         {
@@ -119,6 +129,16 @@
         "Let’s connect and make data work smarter!"
     ],
     "resume": {
+        "title": "Resume",
+        "sections": {
+            "experience": "Experience",
+            "education": "Education",
+            "skills": "Skills",
+            "languages": "Languages",
+            "frameworks": "Frameworks",
+            "others": "Others",
+            "edit": "Edit Resume"
+        },
         "tagline": "👋 Hi, I’m Denilson Ala, a systems engineer focused on data and innovation.",
         "description": "I enjoy creating impactful solutions by blending data analysis, API development, and process automation. With a practical approach, I optimize decision-making and streamline business processes.",
         "experiences": [

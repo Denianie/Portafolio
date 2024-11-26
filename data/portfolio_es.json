@@ -45,6 +45,16 @@
         "contact": "Contacto.",
         "services": "Servicios.",
         "edit":"Editar Datos"
+    },
+    "footer": {
+        "contact": "Contacto.",
+        "letsWork": "TRABAJEMOS",
+        "together": "JUNTOS",
+        "scheduleCall": "Agenda una llamada",
+        "madeWith": "Hecho con",
+        "by": "por",
+        "author": "Denilson Ala",
+        "linkedinUrl": "https://www.linkedin.com/in/denilson-ala-samayani/"
     },  
     "projects": [
         {
@@ -119,6 +129,16 @@
         "¡Conectemos y hagamos que los datos trabajen de forma más inteligente!"
     ],
     "resume": {
+        "title": "CV",
+        "sections": {
+            "experience": "Experiencia",
+            "education": "Educación",
+            "skills": "Habilidades",
+            "languages": "Lenguajes de programación",
+            "frameworks": "Frameworks",
+            "others": "Otros",
+            "edit": "Editar CV"
+        },
         "tagline": "👋 Hola, soy Denilson Ala, ingeniero de sistemas enfocado en datos e innovación.",
         "description": "Disfruto creando soluciones impactantes mediante el análisis de datos, desarrollo de APIs y automatización de procesos. Con un enfoque práctico, optimizo decisiones y simplifico procesos empresariales.",
         "experiences": [

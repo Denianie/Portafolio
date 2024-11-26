@@ -5,13 +5,13 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button";
 import { useLanguage } from "../../utils/languageContext";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
+const Header = ({ handleWorkScroll, handleAboutScroll }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const { language, toggleLanguage, portfolioData } = useLanguage(); // Use the context
   const [mounted, setMounted] = useState(false);
 
-  const { name, menu, showBlog, showResume, darkMode } = portfolioData;
+  const { name, menu, showResume, darkMode } = portfolioData;
 
   useEffect(() => {
     setMounted(true);
@@ -97,9 +97,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <div className="grid grid-cols-1">
                 <Button onClick={() => handleNavigation("work")}>{menu.work}</Button>
                 <Button onClick={() => handleNavigation("about")}>{menu.about}</Button>
-                {showBlog && (
+                {/* {showBlog && (
                   <Button onClick={() => router.push("/blog")}>{menu.blog}</Button>
-                )}
+                )} */}
                 {showResume && (
                   <Button
                     onClick={() =>
@@ -133,9 +133,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         <div className="flex">
           <Button onClick={() => handleNavigation("work")}>{menu.work}</Button>
           <Button onClick={() => handleNavigation("about")}>{menu.about}</Button>
-          {showBlog && (
+          {/* {showBlog && (
             <Button onClick={() => router.push("/blog")}>{menu.blog}</Button>
-          )}
+          )} */}
           {showResume && (
             <Button onClick={() => router.push("/resume")}>{menu.resume}</Button>
           )}
