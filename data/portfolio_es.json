@@ -147,20 +147,28 @@
                 "dates": "Mayo 2024 - Presente",
                 "type": "Tiempo Completo",
                 "position": "Asistente de TI en Ontario Inmobiliaria",
-                "bullets": "Desarrollé un sitio web responsivo con React, Centralicé datos inmobiliarios en una base de datos PostgreSQL, Diseñé y desplegué APIs escalables con Django en AWS"
+                "bullets": [
+                    "Desarrollé un sitio web responsivo con React", 
+                    "Centralicé datos inmobiliarios en una base de datos PostgreSQL", 
+                    "Diseñé y desplegué APIs escalables con Django en AWS"
+                ]
             },
             {
                 "id": "2",
                 "dates": "Abril 2023 - Julio 2023",
                 "type": "Pasantía",
                 "position": "Practicante de People Analytics en Sodimac & Maestro",
-                "bullets": "Automaticé procesos de RR.HH. con Excel VBA, Desarrollé dashboards en Power BI, Identifiqué riesgos de rotación de empleados mediante modelamiento de datos avanzado"
+                "bullets": [
+                    "Automaticé procesos de RR.HH. con Excel VBA",
+                    "Desarrollé dashboards en Power BI", 
+                    "Identifiqué riesgos de rotación de empleados mediante modelamiento de datos avanzado"
+                ]
             },
             {
                 "id": "3",
-                "dates": "February 2023 - April 2023",
-                "type": "Internship",
-                "position": "IT Intern, Mas Ventas E.I.R.L.",
+                "dates": "Febrero 2023 - Abril 2023",
+                "type": "Pasantía",
+                "position": "Practicante de TI en Mas Ventas E.I.R.L.",
                 "bullets": [
                     "Limpié y migré más de 100,000 registros de ventas", 
                     "Colaboré con equipos multifuncionales para integrar datos", 

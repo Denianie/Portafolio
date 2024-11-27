@@ -23,7 +23,7 @@ const Footer = ({}) => {
               {/* TOGETHER */}
               {footer.together}
             </h1>
-            <Button type="primary">
+            <Button type="primary" onClick={() => window.open('https://calendly.com/denilumin', '_blank')}>
               {/* Schedule a call */}
               {footer.scheduleCall}
             </Button>
