@@ -15,16 +15,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: 18 # Cambia la versión de Node.js a una compatible
+          cache: 'yarn'
 
       - name: Install dependencies
         run: yarn install
 
       - name: Build and export project
-        run: yarn export
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./out # Cambia según la configuración de tu proyecto
