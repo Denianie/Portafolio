@@ -59,17 +59,17 @@
     "projects": [
         {
             "id": "1",
-            "title": "Project One Test",
-            "description": "Web Design",
+            "title": "Taxi Fare Prediction",
+            "description": "Predicting taxi fares in NYC with machine learning.",
             "imageSrc": "/images/Work/taxi_fare_prediction.PNG",
-            "url": "http://chetanverma.com/"
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/Taxi%20Fare%20Prediction.pdf"
         },
         {
             "id": "2",
             "title": "Project Two",
             "description": "Web Development",
-            "imageSrc": "/images/Work/fu and miku_family.jpg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/Work/got_network_analysis.PNG",
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/GoT%20Network%20Analysis.pdf"
         },
         {
             "id": "3",
