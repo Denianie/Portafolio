@@ -66,17 +66,17 @@
         },
         {
             "id": "2",
-            "title": "Project Two",
-            "description": "Web Development",
+            "title": "GoT Network Analysis",
+            "description": "Exploring character relationships in Game of Thrones through network analysis.",
             "imageSrc": "/images/Work/got_network_analysis.PNG",
             "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/GoT%20Network%20Analysis.pdf"
         },
         {
             "id": "3",
-            "title": "Project Three",
-            "description": "Design",
-            "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "Life Expectancy Analysis",
+            "description": "Analyzing global life expectancy trends by gender.",
+            "imageSrc": "/images/Work/life_expectancy_country.png",
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/Inequalities%20in%20Life%20Expectancy.pdf"
         },
         {
             "id": "4",
