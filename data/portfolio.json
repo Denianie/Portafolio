@@ -61,7 +61,7 @@
             "id": "1",
             "title": "Taxi Fare Prediction",
             "description": "Predicting taxi fares in NYC with machine learning.",
-            "imageSrc": "/images/Work/taxi_fare_prediction.PNG",
+            "imageSrc": "/images/Work/taxi_fare_prediction.png",
             "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/Taxi%20Fare%20Prediction.pdf"
         },
         {
@@ -80,24 +80,10 @@
         },
         {
             "id": "4",
-            "title": "Project Four",
-            "description": "Marketing",
-            "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "5",
-            "title": "Project Five",
-            "description": "Development",
-            "imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "6",
-            "title": "Project Six",
-            "description": "Design & Development",
-            "imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "American Baby Name Trends",
+            "description": "Analyzing timeless and trendy baby names in America using data from 1920 to 2020.",
+            "imageSrc": "/images/Work/name_trend_analysis.png",
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/Name%20trend%20analysis.pdf"
         }
     ],
     "services": [
