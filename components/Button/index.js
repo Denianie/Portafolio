@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import data from "../../data/portfolio.json";
 
 const Button = ({ children, type, onClick, classes }) => {
-  const { theme, resolvedTheme } = useTheme();
+  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   // Asegura que el componente espera hasta que el tema esté montado
@@ -11,16 +11,18 @@ const Button = ({ children, type, onClick, classes }) => {
     setMounted(true);
   }, []);
 
-  // Mientras no esté montado, usa un placeholder
+  // Si no está montado, muestra un placeholder funcional pero básico
   if (!mounted) {
     return (
-      <button className="bg-gray-500 text-white p-2 rounded-lg opacity-50 pointer-events-none">
+      <button
+        className="bg-orange-500 text-white p-4 h-14 rounded-lg opacity-50 pointer-events-none"
+      >
         {children}
       </button>
     );
   }
 
-  const isDark = resolvedTheme === "dark";
+  const isDark = theme === "dark";
 
   if (type === "primary") {
     return (

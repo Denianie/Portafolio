@@ -59,45 +59,31 @@
     "projects": [
         {
             "id": "1",
-            "title": "Project One Test",
-            "description": "Web Design",
-            "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "Predicción de tarifas de taxis",
+            "description": "Predicción de tarifas de taxis en Nueva York con aprendizaje automático.",
+            "imageSrc": "/images/Work/taxi_fare_prediction.png",
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/Taxi%20Fare%20Prediction.pdf"
         },
         {
             "id": "2",
-            "title": "Project Two",
-            "description": "Web Development",
-            "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "Análisis de la red de GoT",
+            "description": "Explorando las relaciones de los personajes en Game of Thrones a través del análisis de redes.",
+            "imageSrc": "/images/Work/got_network_analysis.png",
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/GoT%20Network%20Analysis.pdf"
         },
         {
             "id": "3",
-            "title": "Project Three",
-            "description": "Design",
-            "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "Análisis de la esperanza de vida",
+            "description": "Análisis de las tendencias mundiales de esperanza de vida por género.",
+            "imageSrc": "/images/Work/life_expectancy_country.png",
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/Inequalities%20in%20Life%20Expectancy.pdf"
         },
         {
             "id": "4",
-            "title": "Project Four",
-            "description": "Marketing",
-            "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "5",
-            "title": "Project Five",
-            "description": "Development",
-            "imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
-        },
-        {
-            "id": "6",
-            "title": "Project Six",
-            "description": "Design & Development",
-            "imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
-            "url": "http://chetanverma.com/"
+            "title": "Tendencias de nombres para bebés en Estados Unidos",
+            "description": "Análisis de nombres de bebés atemporales y de moda en Estados Unidos utilizando datos de 1920 a 2020.",
+            "imageSrc": "/images/Work/name_trend_analysis.png",
+            "url": "https://pub-c03afc80a0484d73a50dea8eba558642.r2.dev/reports_data_projects/Name%20trend%20analysis.pdf"
         }
     ],
     "services": [
