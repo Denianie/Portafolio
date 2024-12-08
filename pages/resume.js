@@ -36,14 +36,7 @@ const Resume = () => {
       <Head>
         <title>{resume.title}</title> {/* Usa el título de resume */}
       </Head>
-      {process.env.NODE_ENV === "development" && (
-        <div className="fixed bottom-6 right-6">
-          <Button onClick={() => router.push("/edit")} type={"primary"}>
-            {/* Edit Resume */}
-            {resume.sections.edit}
-          </Button>
-        </div>
-      )}
+
       {/* {data.showCursor && <Cursor />} */}
       {portfolioData.showCursor && <Cursor />}
       <div
