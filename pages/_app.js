@@ -5,7 +5,7 @@ import { LanguageProvider } from "../utils/languageContext";
 
 const App = ({ Component, pageProps }) => { 
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={true}>
       <LanguageProvider>
         <Component {...pageProps} />
       </LanguageProvider>
