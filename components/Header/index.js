@@ -58,7 +58,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                 <Button onClick={toggleLanguage}>
                   {language === "en" ? "ES" : "EN"} {/* Toggle Button */}
                 </Button>
-                {darkMode && (
+                {darkMode && mounted && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
@@ -72,21 +72,23 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                     ></img>
                   </Button>
                 )}
-
-                <Popover.Button>
-                  <img
-                    className="h-5"
-                    src={`/images/${
-                      !open
-                        ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : theme === "light"
-                        ? "cancel.svg"
-                        : "cancel-white.svg"
-                    }`}
-                  ></img>
-                </Popover.Button>
+                {mounted && (
+                  <Popover.Button>
+                    <img
+                      className="h-5"
+                      src={`/images/${
+                        !open
+                          ? theme === "dark"
+                            ? "menu-white.svg"
+                            : "menu.svg"
+                          : theme === "light"
+                          ? "cancel.svg"
+                          : "cancel-white.svg"
+                      }`}
+                      alt="Menu Icon"
+                    ></img>
+                  </Popover.Button>
+                )}
               </div>
             </div>
             <Popover.Panel
